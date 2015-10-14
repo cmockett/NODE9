@@ -39,16 +39,16 @@ app.post('/getlanguages', function(req, res, next){
 	var wordArray = ["dog", "cat", "house", "table", "water", "tree", "mother", "chair", "mouse", "door"]
 	var translatedArray = []
 	var quizLanguage = req.body.language
-	for(each in wordArray){
-		googleTranslate.translate(wordArray[each], quizLanguage, function(err, translation){
-			if(err){
-				console.log('nothings happening')
-			}else{
-				translatedArray.push(translation.translatedText)
-			}
-		})
+	// for(each in wordArray){
+	// 	googleTranslate.translate(wordArray[each], quizLanguage, function(err, translation){
+	// 		if(err){
+	// 			console.log('nothings happening')
+	// 		}else{
+	// 			translatedArray.push(translation.translatedText)
+	// 		}
+	// 	})
 
-	}
+	// }
 
 })
 
